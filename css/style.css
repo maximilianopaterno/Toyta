@@ -1,0 +1,347 @@
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+h2, h1, .titulo-container {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* Inicio modificacion para elementos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Quito las decoraciones de los links */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Inicio modificacion del body */
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  background-color: #c4ede4;
+  position: relative;
+  padding-bottom: 10.5rem;
+  min-height: 100vh;
+}
+
+/* Fin modificacion del body*/
+/* Inicio configuracion para los titulos de las pages */
+.titulo-container {
+  margin-top: 5.62rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+/* Fin configuracion para los titulos de las pages */
+/* Inicio modificacion de los titulos y menu */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Fin modificacion de los titulos y menu */
+/* Quito el disclaimer */
+.disclaimer {
+  display: none;
+}
+
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-container, h1, h2 {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* Inicio ocultacion de icono del menu */
+.contenedor {
+  margin-bottom: 3.12rem;
+}
+.contenedor header {
+  /* Inicio ocultacion del logo principal para media query */
+  /* Fin ocultacion del logo principal para media query */
+  /* Inicio ajustes del logo principal */
+  /* Fin ajustes del logo principal */
+  /* Inicio modificacion del navbar */
+  /* Fin modificacion del navbar  */
+}
+.contenedor header .logo-media-query-container {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .contenedor header .logo-media-query-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0.625rem;
+    height: 1.87rem;
+  }
+}
+.contenedor header .logo {
+  height: 5.3rem;
+  width: 5.3rem;
+  margin: 0 35px;
+  margin-bottom: 4.5px;
+}
+.contenedor header #menu-button {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .contenedor header #menu-button:checked ~ .navbar-inicio {
+    margin: 0;
+  }
+}
+.contenedor header label {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .contenedor header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+.contenedor header label .menu-icon {
+  width: 3.12rem;
+  margin-bottom: 1.87rem;
+  position: absolute;
+  top: 0;
+}
+.contenedor header .navbar-inicio {
+  width: 100%;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  background-color: #76d5bf;
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 3;
+}
+.contenedor header .navbar-inicio ul {
+  width: 100%;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  right: 20px;
+  /* Inicio modificacion de li del navbar*/
+  /* Fin modificacion de li del navbar*/
+}
+.contenedor header .navbar-inicio ul .menu-list {
+  list-style: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  padding: 0 auto;
+  flex-direction: row;
+  text-decoration: none;
+  /* Inicio modificacion y detalles de los botones del navbar*/
+  /* Fin modificacion y detalles de los botones del navbar */
+}
+.contenedor header .navbar-inicio ul .menu-list:hover {
+  background-color: #4fc9ad;
+}
+.contenedor header .navbar-inicio ul .menu-list .botones {
+  padding: 0 40px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  width: 100%;
+  font-size: 24px;
+}
+@media screen and (max-width: 992px) {
+  .contenedor header .navbar-inicio ul:not(.logo-container) {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contenedor header .navbar-inicio:not(.logo-container) {
+    position: absolute;
+    top: 50px;
+    background-color: #76d5bf;
+    width: auto;
+    height: auto;
+    margin-left: -70%;
+    transition: all 1s;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contenedor header {
+    width: 100%;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    background-color: #76d5bf;
+    position: fixed;
+    top: 0;
+    /* Hago que el navbar siempre se sobreponga */
+    z-index: 3;
+  }
+  .contenedor header .logo-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contenedor {
+    width: 100%;
+  }
+}
+
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-container, h1, h2 {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* Inicio modificacion del flyer inicio */
+.flyer {
+  margin-top: 6.25rem;
+}
+
+/* Fin modificacion del flyer inicio */
+/* Inicio modificacion del flyer publicidad */
+.flyer-publicidad {
+  margin-top: 1.87rem;
+}
+
+.somos-paragraph {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* Fin modificacion del flyer publicidad*/
+.card-text {
+  text-decoration: line-through;
+  margin: 0;
+}
+
+/* Inicio modificacion del catalogo */
+.catalogo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .catalogo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+.catalogo-container .boton {
+  color: white;
+  background-color: #76d5bf;
+  border-color: #76d5bf;
+}
+.catalogo-container .boton:hover {
+  background-color: #4fc9ad;
+  border-color: #4fc9ad;
+}
+
+/* Fin modificacion de las cajas*/
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-container, h1, h2 {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* Footer */
+.footer-class {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #76d5bf;
+  margin-bottom: 0%;
+}
+.footer-class .redes-text-footer {
+  text-align: center;
+  font-size: 26px;
+}
+.footer-class .logos-redes-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-class .logos-redes-container .logos-redes {
+  width: 3.12rem;
+  height: 3.12rem;
+  margin-bottom: 15px;
+}
+.footer-class .copy-footer {
+  text-align: center;
+  margin: 0;
+}
+
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-container, h1, h2 {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* FAQ */
+.accordion {
+  /* Evito que el FAQ se sobreponga */
+  z-index: 1;
+}
+.accordion .accordion-item {
+  background-color: #9de1d1;
+}
+
+.contenedor header .navbar-inicio ul {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-container, h1, h2 {
+  animation: slideInDown;
+  animation-duration: 0.5s;
+}
+
+/* Contacto */
+.formulario {
+  border: 4px solid white;
+  background-color: #9de1d1;
+  padding-bottom: 15px;
+  margin-top: 10px;
+}
+.formulario .boton {
+  color: white;
+  background-color: #76d5bf;
+  border-color: #76d5bf;
+}
+.formulario .boton:hover {
+  background-color: #4fc9ad;
+  border-color: #4fc9ad;
+}
+
+/*# sourceMappingURL=style.css.map */

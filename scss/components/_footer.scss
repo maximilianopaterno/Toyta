@@ -1,0 +1,35 @@
+@import "../base/_variables.scss";
+@import "../base/_extends.scss";
+
+/* Footer */
+
+.footer-class{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color:$bg-color-nav-foot;
+    margin-bottom: 0%;
+
+
+    .redes-text-footer{
+        text-align: center;
+        font-size: $font-footer;
+    }
+
+    .logos-redes-container{
+        display: flex;
+        justify-content: space-evenly;
+
+        .logos-redes{
+            width: 3.12rem;
+            height: 3.12rem;
+            margin-bottom: 15px;
+        }
+    }
+
+    .copy-footer{
+        text-align: center;
+        margin: 0;
+    }
+}

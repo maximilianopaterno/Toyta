@@ -1,0 +1,139 @@
+@import "../base/_variables.scss";
+@import "../base/_extends.scss";
+
+/* Inicio ocultacion de icono del menu */
+.contenedor{
+	margin-bottom: 3.12rem;
+	header {
+		/* Inicio ocultacion del logo principal para media query */
+		.logo-media-query-container{
+			display: none;
+			@media screen and (max-width:992px){
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				left: 0.625rem;
+				height: 1.87rem;
+			}
+		}
+		/* Fin ocultacion del logo principal para media query */
+
+		/* Inicio ajustes del logo principal */
+		.logo{
+			height:5.30rem;
+			width: 5.30rem;
+			margin: 0 35px;
+			margin-bottom: 4.5px;
+		}
+		/* Fin ajustes del logo principal */
+		#menu-button {
+			display: none;
+			@media screen and (max-width:992px){
+				&:checked {
+					~ {
+						.navbar-inicio {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+		label {
+			display: none;
+			@media screen and (max-width:992px){
+				display: block;
+				width: 30px;
+				height: 30px;
+			}
+			.menu-icon{
+				width: 3.12rem;
+				margin-bottom: 1.87rem;
+				position: absolute;
+				top: 0;
+			}
+		}
+
+		/* Inicio modificacion del navbar */
+		.navbar-inicio {
+			width: 100%;
+			height: 5.50rem;
+			line-height: 5.50rem;
+			background-color: $bg-color-nav-foot;
+			position: fixed;
+			display: flex;
+			top: 0;
+			z-index: 3;
+			ul {
+				@extend %flex-center;
+				width: 100%;
+				flex-direction: row;
+				height: 100%;
+				position: relative;
+				right: 20px;
+				/* Inicio modificacion de li del navbar*/
+				.menu-list {
+					list-style: none;
+					cursor: pointer;
+					font-weight: bold;
+					font-size: 20px;
+					display: flex;
+					padding: 0 auto;
+					flex-direction: row;
+					text-decoration: none;
+					&:hover {
+						background-color: $bg-color-hover;
+					}
+					/* Inicio modificacion y detalles de los botones del navbar*/
+					.botones {
+						padding: 0 40px;
+						text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+						width: 100%;
+						font-size:24px;
+					}
+					/* Fin modificacion y detalles de los botones del navbar */
+				}
+				/* Fin modificacion de li del navbar*/
+				@media screen and (max-width:992px){
+					&:not(.logo-container) {
+						flex-direction: column;
+						position: relative;
+						width: 100%;
+						padding: 0;
+						margin: 0;
+						right: 0;
+					}
+				}
+			}
+			@media screen and (max-width:992px){
+				&:not(.logo-container) {
+					position: absolute;
+					top: 50px;
+					background-color: $bg-color-nav-foot;
+					width: auto;
+					height: auto;
+					margin-left: -70%;
+					transition: all 1s;
+				}
+			}
+		}
+		/* Fin modificacion del navbar  */
+		@media screen and (max-width:992px){
+			width: 100%;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			background-color: $bg-color-nav-foot;
+			position: fixed;
+			top: 0;
+			/* Hago que el navbar siempre se sobreponga */
+			z-index: 3;
+			.logo-container{
+				display: none;
+			}
+		}
+	}
+	@media screen and (max-width:992px){
+		width: 100%;
+	}
+}
+
